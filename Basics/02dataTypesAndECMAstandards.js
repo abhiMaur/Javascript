@@ -22,6 +22,7 @@ console.log(typeof null); // here typeof treats null as an object
 // objects dataTypes
     //object
     //function
+    //array
 
 //other dataTypes
     //NaN
