@@ -11,15 +11,18 @@ console.log(typeof name); //typeof returns the data type of the variable
 console.log(typeof null); // here typeof treats null as an object
 
 //PRIMITIVE dataTypes
+    //number => 2 ^ 53
+    //bigint
+    //string => "" or ''
+    //boolean => true/false
+    //null =>standalone value, a representation of empty value
+    //undefined => unassigned value
+    //symbol => unique
 
-//number => 2 ^ 53
-//bigint
-//string => "" or ''
-//boolean => true/false
-//null =>standalone value, a representation of empty value
-//undefined => unassigned value
-//symbol => unique
+// objects dataTypes
+    //object
+    //function
 
-// other dataTypes
-//object
-//NaN
+//other dataTypes
+    //NaN
+    //date
