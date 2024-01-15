@@ -43,4 +43,3 @@ console.table([accountId, accountEmail, accountPassword, accountCity,accountStat
 │ 3       │ 'Jaipur'    │
 │ 4       │ undefined   │
 └─────────┴─────────────┘ */
-
