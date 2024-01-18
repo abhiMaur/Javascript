@@ -18,17 +18,18 @@ There are two categories of data types.
 
 ### JS is a dynamic language
 
-    eg. const score = 100
-    score gets automatically defined as number data type and we can change its data type in real time.
+eg. const score = 100.
+
+score gets automatically defined as number data type and we can change its data type in real time.
 
 
 ### NULL is not 0
     
 >null is used to represent instances where the function returns no value.
     
-    eg. let there be a functions that returns room temperature, now to show that the device is OFF we cannot return the value 0, as it is a valid temperature reading, so we use null.
+eg. let there be a functions that returns room temperature, now to show that the device is OFF we cannot return the value 0, as it is a valid temperature reading, so we use null.
 
-    typeof(null) is shown as object.
+> typeof(null) is shown as object.
 
 > Default value of a variable is undefined.
 
