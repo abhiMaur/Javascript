@@ -10,11 +10,11 @@ console.log(`Hello my name is ${myName} and my repo count is ${repoCount}`)     
 
 
 const gameName = new String('Abhishek')
+//this way of declaring a string makes them an object
 //this way of declaring string gives us access to string methods
 // new operator allocates memory from the heap of string size and 'Abhishek' value and points gameName to it.
 
 console.log(gameName[0])    //A
-console.log(gameName["A"])
 console.log(gameName[2])    //h
 //here the string is stored as an object in key value pair where key is index (from 0) and value are individual letter of the string.
 //hence syntax to call an object value works here
@@ -50,3 +50,4 @@ let newName= "Abhishek-Kumar-Maurya"
 console.log(newName.split('-'))     //[ 'Abhishek', 'Kumar', 'Maurya' ]
 //gives us an array from a string
 
+console.log(Object.keys(gameName))

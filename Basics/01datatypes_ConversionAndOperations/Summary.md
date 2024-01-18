@@ -94,3 +94,32 @@ Here, `userOne` gets a reference of the value of ``user`, hence both variable po
 > https://tc39.es/ecma262/multipage/ecmascript-language-expressions.html#sec-postfix-increment-operator
 
 
+## Strings as Objects
+
+Normally JavaScript strings are primitive values, created from literals. 
+
+For Example :
+```javascript
+  let primitiveString = "Primitive"
+```
+>**But stirngs can also be defined as *objects* with the keyword `new`.**
+
+For Example :
+```javascript
+  let objectString = new String("Object")
+```
+This way an object with index (0-5) is declared as key and every literal is value to its corresponding key as value.
+
+```javascript
+console.log(objectString[1])    //output: b
+```
+Therefore all methods of object.prototype are available here
+
+```javascript
+console.log(Object.keys(objectString))  /* [ '0', '1', '2', '3', '4', '5'] */
+```
+Additionally String functions itself have a lot of useful methods.
+> https://www.w3schools.com/js/js_string_methods.asp
+
+> https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String
+
