@@ -37,7 +37,7 @@ eg. let there be a functions that returns room temperature, now to show that the
 
 ## Array, Objects, Functions
 
-> Here are some basic examples....
+Here are some basic examples....
 
  ```javascript
     const heroes = ["shaktiman", "doga", "naagraj"]
