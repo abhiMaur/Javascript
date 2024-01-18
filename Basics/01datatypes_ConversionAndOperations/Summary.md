@@ -35,7 +35,7 @@ eg. let there be a functions that returns room temperature, now to show that the
 
 > `typeof()` function is used to find the datatype of the variable.
 
-## Array, Objects, Functions
+### Array, Objects, Functions
 
 Here are some basic examples....
 
@@ -52,4 +52,38 @@ Here are some basic examples....
     }
  ```
 
+# Stack and Heap memory
+
+### ***Primitive datatype uses stack memory.***
+
+Every time the variable is called the new variable get a copy of variable's value from the memory to work with.
+> i.e. change in new variable does not change the original value, hence both variable points at different memory location.
+
+```javascript
+let myName = "Abhishek Maurya"
+let myAlias = myName
+myAlias = "abhiMaur"
+
+console.log(myName)     //Abhishek Maurya
+console.log(myAlias)    //abhiMaur
+```
+Here, `myAlias` gets a copy of the value of `myName` to work.
+
+### ***Non-Primitive datatype uses heap memory.***
+
+Every time the original variable is called the new variable gets a reference of variable's value to work with.
+> i.e. change in new variable change the original value.
+
+```javascript
+let user = {
+    email: "user@email.com",
+    upi: "user@ybl"
+}
+let userOne = user
+userOne.email = "userone@email.com"
+
+console.log(user)   //{ email: 'userone@email.com', upi: 'user@ybl' }
+console.log(userOne)    //{ email: 'userone@email.com', upi: 'user@ybl' }
+```
+Here, `userOne` gets a reference of the value of ``user`, hence both variable points at same memory location in heap.
 
