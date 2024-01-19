@@ -123,3 +123,34 @@ Additionally String functions itself have a lot of useful methods.
 
 > https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String
 
+### Numbers as Objects
+Numbers can also be delared as object using `new` keyword.
+
+```javascript
+    let objectNum = new Number(100)
+```
+- Number() also have their prototypes usable as methods for objectNum. 
+
+## Math Functions in JS
+- JavaScript also has a math library accessible using `Math` function.
+Eg.
+```javascript
+    console.log(Math.pow(2,3))  //8
+```
+## Generating Random Number
+
+- `Math.random()`generates a random number from 0-1.
+- To generate a random number between 1 to 10.
+```javascript
+    console.log(Math.random()*10+1);
+```
+- To generate a random number between a to given values we use the given approach.
+
+ ```javascript
+    const min = 10
+    const max = 20
+
+    let randomNum = Math.floor(Math.random() * (max - min + 1) + min)
+    console.log(randomNum)
+    /* This will generate a random value between min and max. */
+ ```
