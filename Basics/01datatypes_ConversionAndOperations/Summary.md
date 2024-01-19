@@ -1,4 +1,4 @@
-# Data Types
+## Data Types
     
 There are two categories of data types.
 - Primitive
@@ -14,7 +14,7 @@ There are two categories of data types.
 
 - They are called by reference.
     
-    Array, Objects, Functions.
+- Array, Objects, Functions.
 
 ### JS is a dynamic language
 
@@ -35,7 +35,7 @@ eg. let there be a functions that returns room temperature, now to show that the
 
 > `typeof()` function is used to find the datatype of the variable.
 
-### Array, Objects, Functions
+## Array, Objects, Functions
 
 Here are some basic examples....
 
@@ -52,9 +52,9 @@ Here are some basic examples....
     }
  ```
 
-# Stack and Heap memory
+## Stack and Heap memory
 
-### ***Primitive datatype uses stack memory.***
+ ### ***Primitive datatype uses stack memory.***
 
 Every time the variable is called the new variable get a copy of variable's value from the memory to work with.
 > i.e. change in new variable does not change the original value, hence both variable points at different memory location.
@@ -88,7 +88,7 @@ console.log(userOne)    //{ email: 'userone@email.com', upi: 'user@ybl' }
 Here, `userOne` gets a reference of the value of ``user`, hence both variable points at same memory location in heap.
 
 
-### Reference
+#### Reference
 > https://tc39.es/ecma262/#sec-type-conversion
 
 > https://tc39.es/ecma262/multipage/ecmascript-language-expressions.html#sec-postfix-increment-operator
@@ -131,13 +131,13 @@ Numbers can also be delared as object using `new` keyword.
 ```
 - Number() also have their prototypes usable as methods for objectNum. 
 
-## Math Functions in JS
+### Math Functions in JS
 - JavaScript also has a math library accessible using `Math` function.
 Eg.
 ```javascript
     console.log(Math.pow(2,3))  //8
 ```
-## Generating Random Number
+### Generating Random Number
 
 - `Math.random()`generates a random number from 0-1.
 - To generate a random number between 1 to 10.
@@ -154,7 +154,7 @@ Eg.
     console.log(randomNum)
     /* This will generate a random value between min and max. */
  ```
- ### Date and time in JS
+### Date and time in JS
  you can create a date object using `Date()`.
  ```javascript 
     let newDate = new Date(); /* gives you a date object with current date and time. */
