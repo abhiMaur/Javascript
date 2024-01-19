@@ -154,3 +154,10 @@ Eg.
     console.log(randomNum)
     /* This will generate a random value between min and max. */
  ```
+ ### Date and time in JS
+ you can create a date object using `Date()`.
+ ```javascript 
+    let newDate = new Date(); /* gives you a date object with current date and time. */
+ ```
+ - In date object, months are counted from 0.ie Jan = 0.
+ - you can generate any date from the midnight of Jan 1 1970 to onwards.
