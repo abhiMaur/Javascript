@@ -38,6 +38,7 @@ console.log(marvel_heroes[3][1])    //batman
 
 # Object
 
+## using Object literal
 - object created using a constructor creates a singleton object, whereas object created using an object literal creates a non-singleton object.
 
 ```javascript
@@ -74,3 +75,43 @@ The keys are by default read as a string and also use symbol datatype.
 - this method locks the object and prevent any change inside it.
 - once declared it cannot be undone in the code.
 
+## Using object constructor
+```javascript
+const twitterUser = new Object()
+```
+
+### Nesting of Objects
+```javascript
+const regularUser = {
+   email: 'user@email.com',
+   fullname: {
+      userFullName:{
+         firstName: 'Abhishek',
+         lastName: 'Maurya'
+      }
+   }
+}
+```
+- to access the values
+```javascript
+   console.log(regularUser.fullname?.userFullName.firstName); //Abhishek
+```
+### combining two object
+- using `Object.assign`
+   - ```javascript
+      const obj1 = {1: "a", 2: 'b'}
+      const obj2 = {3: 'a', 4: 'b'}
+      const obj3 = {5: 'a', 5: 'b'}
+      const obj4 = Object.assign({}, obj1, obj2, obj3)
+      console.log(obj4); //{ '1': 'a', '2': 'b', '3': 'a', '4': 'b', '5': 'b' }
+   ```
+- using spread operator`...`
+   - ```javascript
+      const obj4 = {...obj1,...obj2,...obj3};
+      console.log(obj4);   //{ '1': 'a', '2': 'b', '3': 'a', '4': 'b', '5': 'b' }
+      ```
+
+### Object.keys(), Object.value() and Object.entries()
+- They return the keys and value of an object respectively in the form of an array.
+- Now we can access the keys in array format.
+- .entries makes a nested array of key value pair in a single parent array.

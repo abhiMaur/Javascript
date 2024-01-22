@@ -102,7 +102,7 @@ course.courseInstructor
 //similar syntax
 const {courseInstructor: instructor} = course
 //syntax hai {} = objectname, {} ke andar konsi key chahiye, = ke aage kis object ki
-
+// : ke aage uss key ka alias hai, ye optional hai
 
 console.log(instructor) //Hitesh
 
